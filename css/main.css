@@ -1,0 +1,102 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.logoBar{
+    height: 40px;
+    /*background-color: #960242;*/
+}
+.logoBar img{
+    height: 40px;
+}
+.logo{
+    width: 100%;
+    height: 200px;
+}
+
+.container{
+
+    height: 205px;
+    margin-top: -3px;
+
+}
+.leftBig{
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    height: 200px;
+    margin: 0 1%;
+    width: 49%;
+    float:left;
+
+}   
+.rightSmall{
+     box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+     color: white;
+    height :98px;
+    margin-bottom: 4px;
+    background-color: lightgreen;
+    margin-right: 1%;
+    width: 48%;
+    float: left;
+}
+.registDIV{
+    background-image: url("../img/报名.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px; 
+}
+.registInfoDIV{
+     background-image: url("../img/报名(1).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px; 
+}
+.creditExchangeDIV{
+    background-image: url("../img/积分.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px; 
+}
+.buyTicket{
+    background-image: url("../img/订票2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px; 
+}
+.bookingInfo{
+    background-image: url("../img/票.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px; 
+}
+.other{
+    background-image: url("../img/其他.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px; 
+}
+.select{
+    padding: 10px;
+    /*text-align: left;*/
+    color: white;
+    height: 200px;
+    margin: 1px 25%;
+    width: 50%;
+    /*float:left;*/
+
+}   
+
+
+
+
+
+
+
+
+
+

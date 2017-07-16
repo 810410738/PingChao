@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乒超后台登陆</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <script src="../../js/vendor/jquery-1.11.2.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+
+        <form method="post" class="form-signin">
+            <h2 class="form-signin-heading">需要您登陆</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <lable for="inputPassword" class="sr-only">Password</lable>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label ><input type="checkbox" value="remember-me">Remember me</input></label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="loginBtn">Sign in</button>
+            <!--<a class="btn btn-lg btn-warning btn-block" type="submit" href="register.html">Register</a>-->
+        </form>
+    </div>
+    <script src="../../js/login.js"></script>
+    <script>
+    (function(){
+        $('.form-signin').on('submit', function(e){
+            e.preventDefault();
+            var url = "/user";
+            var data = {
+                email: $('#inputEmail').val(),
+                password: $('#inputPassword').val()
+            }
+
+            $.post(url,data,function(data, textStatus){
+                alert('服务器返回的数据', data);
+                window.location.href = "recentGame.html";
+            }).error(function(){
+                alert('账号密码错误，或网络有问题');
+                window.location.href = "recentGame.html";
+                
+            });
+        })  
+
+    }())
+    </script>
+</body>
+
+</html>
