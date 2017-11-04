@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>购票信息</title>
+    <!--微信UI-->
+    <link href="http://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css" rel="stylesheet">
+<style type="text/css">
+    .qrcode {
+        width: 20%;
+        height: 100px;
+        margin: 0 40%;
+        border: 0 auto;
+        background-image: url(QR.png);
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="weui-msg">
+    
+    <div class="weui-msg__text-area">
+        <h2 class="weui-msg__title">你已成功购买一张门票：</h2>
+    </div>
+</div>
+
+<div class="page__bd">
+        <div class="weui-form-preview">
+            <div class="weui-form-preview__hd">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">付款金额</label>
+                    <em class="weui-form-preview__value">¥60.00</em>
+                </div>
+            </div>
+            <div class="weui-form-preview__bd">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">场次</label>
+                    <span class="weui-form-preview__value">第1场 A队 VS B队 10月5日15:30</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">区域</label>
+                    <span class="weui-form-preview__value">A3 </span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">座位号</label>
+                    <span class="weui-form-preview__value">88</span>
+                </div>
+            </div>
+           
+        </div>
+</div>
+
+<div class="weui-msg">
+    <div class="weui-msg__text-area">
+        <h2 class="weui-msg__title">门票二维码为：</h2>
+    </div>
+    <div class="weui-msg__icon-area"><img src="QR.png" alt=""></div>
+</div>
+         <div class="weui-form-preview__ft">
+                <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">确定</a>
+            </div>
+         <footer class="weui-footer">
+        <p class="weui-footer_test">&copy; 深圳大学乒乓球俱乐部 2017</p>
+    </footer>
+</body>
+</html>
